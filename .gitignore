@@ -24,7 +24,6 @@ experiment.py
 /venv
 /tmp
 /ui-config.json
-/outputs
 /config.json
 /log
 /webui.settings.bat
