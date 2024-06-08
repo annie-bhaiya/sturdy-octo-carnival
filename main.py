@@ -260,7 +260,7 @@ def install_dependents(args):
     if args.sync_repo is not None:
         if args.sync_repo == 'only':
             print("Only download and sync depent repositories")
-            download_repositories()
+            # download_repositories()
             models_path = os.path.join(
                 script_path, dir_repos, fooocus_name, "models")
             print(
@@ -274,7 +274,8 @@ def install_dependents(args):
             exit(1)
 
     if not skip_sync_repo:
-        download_repositories()
+	    print("download_repo")
+        # download_repositories()
 
     # Add dependent repositories to import path
     sys.path.append(script_path)
